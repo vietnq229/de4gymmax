@@ -1,0 +1,182 @@
+@media only screen and (max-width:1055px) {
+    .header-navbar {
+        ul {
+            li {
+                margin: 0 20px;
+            }
+        }
+    }
+}
+@media only screen and (max-width: 1023.9px) {
+    .header {
+        &-bar {
+            display: block;
+        }
+        &-navbar {
+            visibility: hidden;
+            opacity: 0;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            width: 100%;
+            height: 100%;
+            background-color: @color-header-background;
+            padding: 0;
+            transition: all 0.5s;
+            ul {
+                display: block;
+                max-width: 80%;
+                width: 400px;
+                background-color: @color-black;
+                transform: translateX(-100%);
+                transition: transform 0.5s;
+
+                li {
+                    margin: 0;
+                    a {
+                        padding: 15px 20px;
+                        display: block;
+                    }
+                } 
+                
+            }
+            &.active {
+				visibility: visible;
+				opacity: 1;
+				ul {
+					transform: translateX(0);
+				}
+			}
+        }
+    }
+    .category-product {
+		&-col {
+			width: calc(100%); // Độ rộng của cột 100%
+			.flex(100% ); // Độ rộng của cột 100%
+		}
+		&-item {
+			.flexbox(); // Item căn ngang
+			& > div {
+				width: 50%; // chia đôi item
+				.flex(50%);
+				padding-top: calc(
+					250 / 390 * 50%
+				); // vì lầy padding của div cha chia đôi thì còn 50%
+			}
+		}
+	}
+    .product {
+        &-col {
+            .col(6);
+        }
+    }
+    .brand {
+        &-col{
+            .col(4); // chia 3 cột
+        }
+    }
+    .site-footer {
+        &-nav_heading {
+            margin-top:  40px; // chinh lai cho can doi
+        }
+        &-navbar {
+            margin-top: 40px;
+            .col {
+                .col(6);
+            }
+        }
+    }
+}
+@media only screen and (max-width:767.9px) {
+    .category-product {
+        &-item {
+            & > div {
+                width: 100%; // width thành 100% khi responsive
+                .flex(100%);
+                padding-top: calc(
+                    250 / 390 * 100%
+                ); // cha giờ width full nên lấy 100%
+            }
+        }
+        &-image {
+            .order(1); // Đổi vị trí tất cả ảnh lên đầu của cha
+        }
+        &-content {
+            .order(2); // Đổi vị trí tất cả content xuống cuối của cha
+        }
+    }
+    .main-banner{
+        &-title {
+            font-size: 40px;
+        }
+        &-slogan {
+            font-size: 20px;
+        }
+    }
+    .site-footer {
+        &-nav_heading {
+            cursor: pointer;
+        }
+        &_navbar {
+            ul {
+                max-height: 0;
+                overflow: hidden;
+                transition: max-height 0.5s;
+                &.active {
+                    max-height: 1000px
+                }
+            }
+            .col {
+                .col(12);
+                p,
+                a {
+                    text-align: center;
+                    justify-content: center;
+                    width: 100%;
+                    display: block;
+                }
+            }
+        }
+    }
+}
+@media only screen and (max-width: 599.9px){
+    .brand {
+        &-col {
+            .col(6); //chia 3 col
+        }
+    }
+}
+@media only screen and (max-width:539.9px){
+    .product {
+        &-col {
+            .col(12);
+        }
+    }
+}
+
+@media only screen and (max-width:500.9px) {
+    .main-banner {
+        &-title{
+        font-size: 30px;
+        }
+        &-slogan {
+            font-size: 20px;
+        }
+    }
+        
+    .site-header-row {
+        flex-wrap: wrap;
+    }
+    .header {
+        &-logo {
+            .order(4);
+            .flex(100%);
+            width: 100%;
+            justify-content: center;
+            margin-bottom: 15px;
+        }
+    }
+}
+
