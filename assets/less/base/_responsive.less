@@ -78,16 +78,16 @@
         }
     }
     .site-footer {
-        &-nav_heading {
-            margin-top:  40px; // chinh lai cho can doi
-        }
-        &-navbar {
-            margin-top: 40px;
-            .col {
-                .col(6);
-            }
-        }
-    }
+		&-nav_heading {
+			margin-top: 40px; // chỉnh lain cho cân đối
+		}
+		&_navbar {
+			margin-top: 40px; // chỉnh lain cho cân đối
+			.col {
+				.col(6);
+			}
+		}
+	}
 }
 @media only screen and (max-width:767.9px) {
     .category-product {
@@ -156,7 +156,7 @@
     }
 }
 
-@media only screen and (max-width:500.9px) {
+@media only screen and (max-width:499.9px) {
     .main-banner {
         &-title{
         font-size: 30px;
@@ -176,7 +176,114 @@
             width: 100%;
             justify-content: center;
             margin-bottom: 15px;
+            
+        }
+    }
+    .product-tab {
+        &-title {
+            font-size: 15px;
+        }
+    }
+    .client-say {
+        &-title {
+            font-size: 27px;
+        }
+        &-word {
+            font-size: 14px;
+        }
+    }
+    .footer {
+        &-des {
+            font-size: 12px;
         }
     }
 }
 
+@media only screen and (max-width: 424.9px){
+    .header {
+        &-logo {
+            justify-content: center;
+            
+        }
+    }
+    .product-tab {
+        &-title {
+            font-size: 12px;
+        }
+    }
+
+}
+@media only screen and (max-width: 374.9px) {
+
+    .header {
+        &-logo {
+            width: 80%;
+        }
+    }
+    .main-banner {
+        &-title{
+        font-size: 30px;
+        }
+        &-slogan {
+            font-size: 22px;
+        }
+    }
+    .product-tab {
+        &-title {
+            font-size: 12px;
+        }
+    }
+}
+@media only screen and  (max-width: 320px) {
+    .product-tab {
+        &-title {
+            font-size: 12px;
+            padding: 15px 10px 13px 8px;
+        }
+    }
+    .header {
+        &-navbar {
+            nav {
+                ul{
+                    width: 181px;
+                }
+            }
+        }
+    }
+    .main-banner {
+        
+        &-title {
+            font-size: 27px;
+            margin-bottom: 5px;
+        }
+        &-slogan {
+            font-size: 17px;
+        }
+        &-des {
+            font-size: 12px;
+        }
+        &-shop_now {
+            a {
+                padding: 7px 23px;
+            }
+        }
+    }
+    .category-product {
+        &-content{
+            &_title {
+                margin: 10.5px
+            }
+            &_des {
+                font-size: 12px;
+            }
+        }
+       
+    }
+    .copyright-link {
+        font-size: 12px;
+    }
+
+    .site-footer-nav_heading {
+        font-size: 16px;
+    }
+}

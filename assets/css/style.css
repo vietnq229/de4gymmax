@@ -116,6 +116,7 @@ a {
   padding: 0;
 }
 .header-logo a {
+  width: 170px;
   display: block;
   line-height: 0;
 }
@@ -705,10 +706,10 @@ main {
   .site-footer-nav_heading {
     margin-top: 40px;
   }
-  .site-footer-navbar {
+  .site-footer_navbar {
     margin-top: 40px;
   }
-  .site-footer-navbar .col {
+  .site-footer_navbar .col {
     max-width: calc(6 * 100% / 12);
     flex: 0 0 calc(6 * 100% / 12);
     position: relative;
@@ -794,7 +795,7 @@ main {
     box-sizing: border-box;
   }
 }
-@media only screen and (max-width: 500.9px) {
+@media only screen and (max-width: 499.9px) {
   .main-banner-title {
     font-size: 30px;
   }
@@ -818,5 +819,73 @@ main {
     width: 100%;
     justify-content: center;
     margin-bottom: 15px;
+  }
+  .product-tab-title {
+    font-size: 15px;
+  }
+  .client-say-title {
+    font-size: 27px;
+  }
+  .client-say-word {
+    font-size: 14px;
+  }
+  .footer-des {
+    font-size: 12px;
+  }
+}
+@media only screen and (max-width: 424.9px) {
+  .header-logo {
+    justify-content: center;
+  }
+  .product-tab-title {
+    font-size: 12px;
+  }
+}
+@media only screen and (max-width: 374.9px) {
+  .header-logo {
+    width: 80%;
+  }
+  .main-banner-title {
+    font-size: 30px;
+  }
+  .main-banner-slogan {
+    font-size: 22px;
+  }
+  .product-tab-title {
+    font-size: 12px;
+  }
+}
+@media only screen and (max-width: 320px) {
+  .product-tab-title {
+    font-size: 12px;
+    padding: 15px 10px 13px 8px;
+  }
+  .header-navbar nav ul {
+    width: 181px;
+  }
+  .main-banner-title {
+    font-size: 27px;
+    margin-bottom: 5px;
+  }
+  .main-banner-slogan {
+    font-size: 17px;
+  }
+  .main-banner-des {
+    font-size: 12px;
+  }
+  .main-banner-shop_now a {
+    padding: 7px 23px;
+  }
+  .category-product-content_title {
+    margin: 10.5px;
+  }
+  .category-product-content_des {
+    font-size: 12px;
+  }
+  .copyright-link {
+    font-size: 12px;
+  }
+  .site-footer-nav_heading {
+    font-size: 16px;
   }
 }
