@@ -1,6 +1,4 @@
-main {
-    overflow: hidden;
-}
+
 .main-banner {
     min-height: 950px;
     background-image: url('../images/banner/banner_model.png'),
@@ -8,7 +6,7 @@ main {
     background-repeat: no-repeat,no-repeat;
     background-size: auto 759px, auto 100%;
     background-position: bottom 0 right 23.8%,center;
-
+    background-color: @color-gray;
     &-text {
         color: @color-text--white;
         width: 532px;
@@ -19,7 +17,7 @@ main {
         font-size: 60px;
         font-weight: 700;
         .translateX(-4px);
-        margin-bottom: -7px;
+        margin-bottom: -6px;
     }
     &-slogan {
         font-size: 40px;
@@ -34,13 +32,14 @@ main {
         margin-bottom: 55px;
     }
     &-shop_now a {
+        padding: 12px 46.3625px;
         display: inline-block;
         color: @color-white;
-        border: 1px solid;
+        border: 1px solid @color-white;
         text-transform: uppercase;
         font-size: 14px;
         line-height: 1.7142;
-        padding: 12px 46.3625px;
+        
     }
 }
 // danh muc san pham catergory-product
@@ -53,13 +52,13 @@ main {
         background-color: @color-white;
     }
     &-col {
-        width: calc(100%/3); // Độ rộng của cột là 33.3333%
-        .flex(100%/3); // Độ rộng của cột 33.3333%
+        width: calc(100% / 3); // Độ rộng của cột là 33.3333%
+        .flex(100% / 3); // Độ rộng của cột 33.3333%
     }
     &-item {
 		display: block;
 		& > div {
-			padding-top: calc(250 / 390 * 100%);
+			padding-top: calc(250 / 390 * 100%); // taọ khung
 			position: relative;
 			& > img,
 			& > div {
@@ -70,7 +69,7 @@ main {
 				bottom: 0;
 				width: 100%;
 				height: 100%;
-				object-fit: contain;
+				object-fit: contain; // chống méo ảnh
 			}
 		}
 	}
@@ -105,7 +104,7 @@ main {
         &_des {
             font-size: 14px;
             line-height: 1.7142;
-            width: 331px; // chiều rộng của nội dung lấy ở psd
+            width: 316px +15px; // chiều rộng của nội dung lấy ở psd
             max-width: 100%;
             padding: 0 15px; // Lề
             box-sizing: border-box; // chống tràn viền
@@ -113,19 +112,14 @@ main {
     }
     
     
-    &-image {
-        padding-top: 250px;
-    }
+    // &-image {
+    //     padding-top: 250px;
+    // }
     
 }
 // product
-.product {
-    margin-top: 96px -15px;
-    padding-top: 84px;
-    transform: translateX(-2px);
-}
+
 .product-tab {
-    margin-left: 4px;
 	border-bottom: 1px solid @color-gray2;
 	.flexbox();
 	.translateX(-2px);
@@ -157,6 +151,7 @@ main {
 }
 //product list
 .product {
+    margin-top: 96px - 15px ;
     &-list {
         margin-top: 40px;
         display: none;
@@ -168,11 +163,9 @@ main {
         row-gap: 45px;
     }
     &-col {
-        .col (3);
+        .col(3);
     }
     &-item {
-        // filter: drop-shadow(0 0 2.5px rgba(0, 0, 0, 0.2));
-        // background-color: @color-white;
         &:hover {
             filter: drop-shadow(0 0 2.5px rgba(0, 0, 0, 0.2));
             background-color: @color-white;
@@ -181,9 +174,10 @@ main {
             }
         }
     }
+    &-content {
+        padding: 25px 30px 30px 30px;
+    }
     &-title {
-        margin-bottom: -3px;
-        margin-left: 2px;
         font-size: 14px;
         line-height: 1.71428;
         font-weight: 400;
@@ -191,15 +185,12 @@ main {
         font-family: 'Poppins';
     }
     &-price {
-        margin-left: 1px;
         line-height: 1.71428;
         font-weight: 700;
-    }
-    &-content {
-        padding: 25px 30px 30px 30px;
+        font-size: 14px;
     }
     &-image {
-        padding-top: calc(230/270*100%);
+        padding-top: calc(230 /270 * 100%);
         position: relative;
         img {
             position: absolute;
@@ -235,10 +226,10 @@ main {
                 color: @color-white; 
             }
         }
-    }
-    i {
-        font-size: 14px;
-        line-height: 2.1428;
+        i {
+            font-size: 14px;
+            line-height: 2.1428;
+        }
     }
 }
 
@@ -246,13 +237,13 @@ main {
 .client-say {
     text-align: center;
     &-title{
-    margin-top: 95px;
+    margin-top: 89px;
     font-size: 36px;
-    line-height: 30px;
+    line-height: 1.2;
     font-weight: 700;
     }
     &-avatar{
-        margin: 57px auto 0 auto;
+        margin: 50px auto 0 auto;
         width: 80px;
         height: 80px;
         border-radius: 50%; //width height bằng nhau thì border radius 50 là ra hình tròn
@@ -265,20 +256,19 @@ main {
         padding: 0 15px;
         box-sizing: border-box;
         font-size: 18px;
-        line-height: 1.66666;
+        line-height: 1.6666;
         font-weight: 400;
         color: @color-gray;
-        text-align: center;
     }
     &-name {
-        margin-top: 27px;
+        margin-top: 30px;
         font-weight: 700;
         font-size: 18px;
         text-transform: uppercase;
         line-height: 1.6666; // do là 30 /18 
     }
     &-status {
-        margin-top: 3px;
+        margin-top: 7px;
         font-size: 14px;
         line-height: 1.6666;
         color: @color-gray;
@@ -305,6 +295,9 @@ main {
 }
 //brand
 .brand {
+    .container {
+        border-top: 1px solid @color-gray3;
+    }
     margin-top: 145px;
     &-col {
         .col(2); // chia 6 cột
@@ -316,7 +309,6 @@ main {
             width: auto;
             max-width: 90%;
             min-width: 80%;
-
             position: absolute;
             top: 50%;
             left: 50%;

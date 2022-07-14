@@ -23,7 +23,7 @@ $(document).ready(function () {
 
 	$('.client-say-slick').slick({
 		dots: true, // Hiện dot
-		arrow: false, //bỏ mũi tên 2 bên
+		arrows: false, //bỏ mũi tên 2 bên
 	});
 
 	$('.site-footer-nav_heading').on('click', function (e) {
@@ -35,5 +35,4 @@ $(document).ready(function () {
         const this_list = $(this).next();
         this_list.addClass('active');
     });
-
 });

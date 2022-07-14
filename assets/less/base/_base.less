@@ -2,11 +2,9 @@
     padding: 0;
     margin: 0;
 }
-
 body {
     font-family: @font-family__base;
 }
-
 .container {
     width: 1170px + 30px;
     max-width: 100%; // Khi ở màn nhỏ hơn width 1170 +30 thì co về 100%
@@ -23,8 +21,11 @@ body {
 li {
     list-style: none;
 }
-
 a {
     text-decoration: none;
     color: @color-text--black;
+}
+.stop-scrolling {
+	height: 100%;
+	overflow: hidden;
 }
