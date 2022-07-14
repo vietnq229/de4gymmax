@@ -1,20 +1,20 @@
 @font-face {
   font-family: 'Poppins';
-  src: url('/assets/fonts/Poppins/ttf/Poppins-Regular.ttf') format('truetype'), url('/assets/fonts/Poppins/woff/Poppins-Regular.woff') format('woff'), url('/assets/fonts/Poppins/woff2/Poppins-Regular.woff2') format('woff2');
+  src: url('../fonts/Poppins/ttf/Poppins-Regular.ttf') format('truetype'), url('../fonts/Poppins/woff/Poppins-Regular.woff') format('woff'), url('../fonts/Poppins/woff2/Poppins-Regular.woff2') format('woff2');
   font-weight: 400;
   font-style: normal;
   font-display: auto;
 }
 @font-face {
   font-family: 'Poppins';
-  src: url('/assets/fonts/Poppins/ttf/Poppins-Bold.ttf') format('truetype'), url('/assets/fonts/Poppins/woff/Poppins-Bold.woff') format('woff'), url('/assets/fonts/Poppins/woff2/Poppins-Bold.woff2') format('woff2');
+  src: url('../fonts/Poppins/ttf/Poppins-Bold.ttf') format('truetype'), url('../fonts/Poppins/woff/Poppins-Bold.woff') format('woff'), url('../fonts/Poppins/woff2/Poppins-Bold.woff2') format('woff2');
   font-weight: 700;
   font-style: normal;
   font-display: auto;
 }
 @font-face {
   font-family: 'Poppins';
-  src: url('/assets/fonts/Poppins/ttf/Poppins-BoldItalic.ttf') format('truetype'), url('/assets/fonts/Poppins/woff/Poppins-BoldItalic.woff') format('woff'), url('/assets/fonts/Poppins/woff2/Poppins-BoldItalic.woff2') format('woff2');
+  src: url('../fonts/Poppins/ttf/Poppins-BoldItalic.ttf') format('truetype'), url('../fonts/Poppins/woff/Poppins-BoldItalic.woff') format('woff'), url('../fonts/Poppins/woff2/Poppins-BoldItalic.woff2') format('woff2');
   font-weight: 700;
   font-style: italic;
   font-display: auto;
@@ -403,7 +403,7 @@ a {
 .category-product-content_des {
   font-size: 14px;
   line-height: 1.7142;
-  width: 316px 15px;
+  width: 331px;
   max-width: 100%;
   padding: 0 15px;
   box-sizing: border-box;
@@ -421,6 +421,11 @@ a {
   -moz-transform: translateX(-2px);
   -ms-transform: translateX(-2px);
   -o-transform: translateX(-2px);
+}
+.product-tab a {
+  margin-top: 2px;
+  margin-left: 2px;
+  margin-right: 0px;
 }
 .product-tab-title {
   text-transform: uppercase;
@@ -560,14 +565,14 @@ a {
   color: #777;
 }
 .client-say-name {
-  margin-top: 30px;
+  margin-top: 28px;
   font-weight: 700;
   font-size: 18px;
   text-transform: uppercase;
   line-height: 1.6666;
 }
 .client-say-status {
-  margin-top: 7px;
+  margin-top: 5px;
   font-size: 14px;
   line-height: 1.6666;
   color: #777;

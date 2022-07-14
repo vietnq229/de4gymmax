@@ -104,7 +104,7 @@
         &_des {
             font-size: 14px;
             line-height: 1.7142;
-            width: 316px +15px; // chiều rộng của nội dung lấy ở psd
+            width: 316px + 15px; // chiều rộng của nội dung lấy ở psd
             max-width: 100%;
             padding: 0 15px; // Lề
             box-sizing: border-box; // chống tràn viền
@@ -120,6 +120,11 @@
 // product
 
 .product-tab {
+    a {
+        margin-top: 2px;
+        margin-left: 2px;
+        margin-right: 0px;
+    }
 	border-bottom: 1px solid @color-gray2;
 	.flexbox();
 	.translateX(-2px);
@@ -261,14 +266,14 @@
         color: @color-gray;
     }
     &-name {
-        margin-top: 30px;
+        margin-top: 28px;
         font-weight: 700;
         font-size: 18px;
         text-transform: uppercase;
-        line-height: 1.6666; // do là 30 /18 
+        line-height: 1.6666; // do là 30 /18 đo trong psd
     }
     &-status {
-        margin-top: 7px;
+        margin-top: 5px;
         font-size: 14px;
         line-height: 1.6666;
         color: @color-gray;
